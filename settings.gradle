@@ -1,1 +1,1 @@
-include ':myapplication', ':gogoengine'
+include ':gogoengine', ':myapplication'
