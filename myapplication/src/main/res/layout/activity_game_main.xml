@@ -1,0 +1,233 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMainActivity"
+    android:background="@drawable/background">
+<!--android:background="#ffffff"-->
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <!--<TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"-->
+    <!--android:textStyle="bold" android:textSize="50sp" android:gravity="center"-->
+    <!--android:text="@string/dummy_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@drawable/menu_button"
+            android:layout_marginLeft="@dimen/space_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/game_title1"
+            android:fontFamily="sans-serif"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowColor="#444"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/game_title2"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"
+                />
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <com.weobot.myapplication.util.TestView
+                android:id="@+id/testView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/board_view_margin"/>
+
+            <Space
+                android:layout_width="@dimen/space_margin"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player1_label"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="40px"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_player1"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player2_label"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="40px"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_player2"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <!--<Button-->
+            <!--android:id="@+id/dummy_button"-->
+            <!--style="?metaButtonBarButtonStyle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/dummy_button" />-->
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
